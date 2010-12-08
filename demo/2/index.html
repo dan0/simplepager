@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>quickPager - easy jQuery paging plugin</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/quickpager.jquery.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+$(document).ready(function() {
+	$(".pageme tbody").quickPager( {
+		pageSize: 5,
+		currentPage: 1,
+		pagerLocation: "after"
+	});
+});
+
+/* ]]> */
+</script>
+<style type="text/css">
+
+
+p {
+	background: #e5e5e5;
+	margin-bottom:1px;
+	margin-top:0px;
+}
+
+ul.paging li {
+    padding: 10px;
+    background: #83bd63;
+    font-family: georgia;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    width: 180px;
+    margin-bottom: 1px;
+}
+
+ul.pageNav li{
+    display:block;
+
+    padding: 3px;
+    font-family: georgia;
+}
+
+ul.pageNav li a{
+    color: #333;
+    text-decoration: none;
+}
+
+li.currentPage {
+	background: red;
+        background: #83bd63;	
+}
+
+ul.pageNav li.currentPage a {
+	color: #fff;	
+}
+
+table.pageme {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}  
+
+table.pageme td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}      
+
+table, div {
+
+	clear: both
+}
+
+
+</style>
+</head>
+
+<body>
+	<!--<ul class="paging">
+		<li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	    <li>5</li>
+	    <li>6</li>
+	    <li>7</li>
+	    <li>8</li>
+	    <li>9</li>
+		<li>10</li>
+	    <li>11</li>
+	    <li>12</li>
+	    <li>13</li>
+	    <li>14</li>
+	    <li>15</li>
+	    <li>16</li>
+	    <li>17</li>
+	    <li>18</li>
+	    <li>19</li>
+	    <li>20</li>
+	    <li>21</li>
+	    <li>22</li>
+	    <li>23</li>
+	    <li>24</li>
+	</ul>-->
+	
+	
+   
+<div class="pager"></div>
+<table border="0" width="400" cellpadding="3" cellspacing="3" class="pageme">
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>21</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>23</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>26</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>27</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>29</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>30</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>31</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>32</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>33</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>34</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+		<tr>
+			<td>35</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+			<td>Table Cell</td>
+		</tr>
+	</tbody>
+    <tfoot>
+    <tr>dasdas</tr>
+    </tfoot>
+</table>
+<div class="pager"></div>
+ 
+ 
+
+
+</body>
+</html>

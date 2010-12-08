@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>quickPager - easy jQuery paging plugin</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/quickpager.jquery.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+$(document).ready(function() {
+	
+	
+	$("ul.paging").quickPager();
+	
+	
+	$("ul.paging2").quickPager({pagerLocation:"both"});
+});
+
+/* ]]> */
+</script>
+<style type="text/css">
+
+
+h1, h2,ul {
+	
+	clear: both;
+}
+
+
+
+ul.paging li,
+ul.paging2 li {
+    padding: 10px;
+    background: #83bd63;
+    font-family: georgia;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    width: 180px;
+    margin-bottom: 1px;
+}
+
+ul.red {
+	outline:10px solid red;
+}
+
+ul.simplePagerNav li{
+    display:block;
+    floaT: left;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-family: georgia;
+}
+
+ul.simplePagerNav li a{
+    color: #333;
+    text-decoration: none;
+}
+
+li.currentPage {
+	background: red;
+        background: #83bd63;	
+}
+
+ul.simplePagerNav li.currentPage a {
+	color: #fff;	
+}
+
+table.pageme {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}  
+
+table.pageme td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}      
+
+ul.paging  li.sticky {
+	background-color: red !important;
+	display: block !important
+}
+
+
+
+</style>
+</head>
+
+<body>
+	<h1>SimplePager demo page</h1>
+	<p><a href="http://www.geckonewmedia.com/blog/2009/8/14/jquery-youtube-playlist-plugin---youtubeplaylist">back to blog post</a></p>
+            <code>
+        	<pre>
+    $("ul.paging").quickPager();
+            </pre>
+        </code>
+
+
+<ul class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Second example</h2>
+            <code>
+        	<pre>
+   $("ul.paging2").quickPager({pagerLocation:"both"});
+            </pre>
+        </code>
+ <ul class="paging2">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<p class="fdfdsfds" style="margin-top:100px;"></p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-660073-49");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
